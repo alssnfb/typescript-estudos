@@ -84,3 +84,43 @@
         resize: () => {}   
     }
 ```
+
+## Literal Types
+
+- Os literal types servem para dar um valor exato e especifico para alguma variavel ao invés de apenas dizer se ela é um number, string, boolean etc...
+
+- Ex:
+
+```
+    // Literal (valor exato, específico)
+
+    // É possível tbm criar um Type Aliases pra facilitar mais
+
+    type Quantity = 50 | 100;
+
+    let quantity: Quantity = 100;
+```
+
+## Nullable Types
+
+- O Typescript por padrão impede a possibilidade de valores nulos ou indefinidos de existirem (a não ser que seja alterado no TS Config)
+
+- Entretanto não é recomendado ativar essa opção já que é contrária justamente ao propósito da tipagem estática do TypeScript
+
+- Ainda sim é possível setar valores nulos ou indefinidos da forma abaixo:
+
+- Ex:
+
+```
+   
+   // Ao utilizar um Union Type para criar um valor nulo ou indefinido é possível passar esses valores
+
+    function greet(name: string | null | undefined){
+    if (name)
+        console.log(name.toLocaleUpperCase());
+    else
+        console.log('Olá!');
+    }
+
+    greet(undefined)
+```    

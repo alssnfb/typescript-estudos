@@ -1,4 +1,3 @@
-"use strict";
 let employee = {
     id: 1,
     name: "Alisson",
@@ -13,4 +12,3 @@ let jorge = {
         console.log(date);
     }
 };
-//# sourceMappingURL=Type%20Aliases.js.map

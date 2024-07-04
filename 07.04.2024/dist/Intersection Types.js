@@ -1,0 +1,4 @@
+let textbox = {
+    drag: () => { },
+    resize: () => { }
+};
